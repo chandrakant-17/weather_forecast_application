@@ -159,6 +159,7 @@ fun WeatherAppScreen(viewModel: WeatherViewModel = hiltViewModel()) {
             CitySearchBar(city, onSearch = { cityName ->
                 if (cityName.isNotEmpty()) {
                     viewModel.fetchWeather(cityName)
+                    focusManager.clearFocus()
                 }
             }, focusManager)
 
