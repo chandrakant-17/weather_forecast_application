@@ -1,15 +1,3 @@
-/*
-plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
-    id("kotlin-kapt")
-//    id("dagger.hilt.android.plugin")
-    id("com.google.dagger.hilt.android")
-    id("com.google.devtools.ksp")
-}
-*/
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -74,7 +62,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 
-    // ✅ Hilt dependencies
+    // Hilt dependencies
     implementation("com.google.dagger:hilt-android:2.51.1")
     ksp("com.google.dagger:hilt-compiler:2.51.1")
 
